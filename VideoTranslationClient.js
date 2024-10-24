@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 class VideoTranslationClient {
-    constructor() {
-        this.url = 'http://localhost:3000';
+    constructor(url) {
+        this.url = url;
         this.maxRetries = 10;
     }
 
